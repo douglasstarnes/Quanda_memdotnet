@@ -27,7 +27,7 @@ else
         @foreach(var question in Model.Questions)
         {
             <tr>
-                <td>@question.QuestionTitle</td>
+                <td><a asp-page="./Details" asp-route-questionId="@question.QuestionId">@question.QuestionTitle</a></td>
                 <td></td>
                 <td></td>
             </tr>
